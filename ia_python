@@ -1,0 +1,20 @@
+# Tarea evaluable nº4 José Miguel Sáez Teruel
+def greet(name):
+    return f"Hola, {name}!"
+
+if __name__ == "__main__":
+    name = input("Por favor, indica tu nombre: ")
+    age = int(input("Por favor, indica tu edad: "))  # Convertir la edad a entero
+
+    # Verificar si el usuario es mayor o menor de edad
+    if age >= 18:
+        print("Eres un adulto.")  # Mayor de edad
+    else:
+        print("Eres un menor.")  # Menor de edad
+
+    print(greet(name))
+    print(f"Tienes {age} años.")
+    
+    # Calcular la edad en 10 años
+    age_in_10_years = age + 10
+    print(f"En 10 años tendrás {age_in_10_years} años.")
